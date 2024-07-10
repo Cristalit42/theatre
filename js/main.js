@@ -25,17 +25,23 @@ $(function(){
 
 // slider start
 
-$('.directions__filter-btn').on('click', function () {
-  $('.directions__filter-btn').removeClass('directions__filter-btn--active')
-  $(this).addClass('directions__filter-btn--active')
-})
-
 $('.popular__slider').slick({
   arrows: false,
   slidesToShow: 3,
   infinite: true,
   draggable: true,
+  dots: true,
+  appendDots: ('.popular__slider-dots'),
+})
 
+$('.popular__slider-arrow--prev').on('click', function (e) {
+  e.preventDefault()
+  $('.popular__slider').slick('slickPrev')
+})
+
+$('.popular__slider-arrow--next').on('click', function (e) {
+  e.preventDefault()
+  $('.popular__slider').slick('slickNext')
 })
 
 // slider end
