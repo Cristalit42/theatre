@@ -1,0 +1,83 @@
+/* @font-face {
+  font-family: "Everett";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fonts/everett-regular.eot") format("eot"),
+    url("../fonts/2.woff") format("woff"),
+    url("../fonts/2.woff2") format("woff2");
+  font-display: swap;
+} */
+ /* ---- */
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url("../fonts/inter-light.eot") format("eot"),
+    url("../fonts/inter-light.woff") format("woff"),
+    url("../fonts/inter-light.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fonts/inter-regular.eot") format("eot"),
+    url("../fonts/inter-regular.woff") format("woff"),
+    url("../fonts/inter-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("../fonts/inter-medium.eot") format("eot"),
+    url("../fonts/inter-medium.woff") format("woff"),
+    url("../fonts/inter-medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("../fonts/inter-bold.eot") format("eot"),
+    url("../fonts/inter-bold.woff") format("woff"),
+    url("../fonts/inter-bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  font-style: normal;
+  src:
+    url("../fonts/inter-black.eot") format("eot"),
+    url("../fonts/inter-black.woff") format("woff"),
+    url("../fonts/inter-black.woff2") format("woff2");
+  font-display: swap;
+}
+/* ---- */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fonts/roboto-regular.eot") format("eot"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.woff2") format("woff2");
+  font-display: swap;
+}
+/* ---- */
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    url("../fonts/rubik-medium.eot") format("eot"),
+    url("../fonts/rubik-medium.woff") format("woff"),
+    url("../fonts/rubik-medium.woff2") format("woff2");
+  font-display: swap;
+}
