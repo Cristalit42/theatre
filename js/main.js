@@ -45,7 +45,30 @@ $('.popular__slider-arrow--next').on('click', function (e) {
 })
 
 // slider end
+// gallery slider start
 
+$('.gallery__slider').slick({
+  arrows: false,
+  slidesToShow: 3,
+  infinite: true,
+  draggable: true,
+  dots: true,
+  appendDots: ('.gallery__slider-dots'),
+  variableWidth: true
+})
+
+$('.gallery__slider-arrow--left').on('click', function (e) {
+  e.preventDefault()
+  $('.gallery__slider').slick('slickPrev')
+})
+
+$('.gallery__slider-arrow--right').on('click', function (e) {
+  e.preventDefault()
+  $('.gallery__slider').slick('slickNext')
+})
+
+
+// gallery slider end
 });
 
 

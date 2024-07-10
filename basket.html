@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Большой театр</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-iner">
+            <div class="header__top-row">
+              <div class="header__top-logo">
+                <a class="header__logo-link" href="#">
+                  <img src="images/logo.svg" alt="Билеты. Большой театр" class="header__top-img">
+                </a>
+              </div>
+              <ul class="header__top-content">
+                <li class="header__top-basket">
+                  <a class="header__basket-link" href="basket.html">
+                    <img class="header__basket-img" src="images/icons/basket-icon.svg" alt="корзина">
+                  </a>
+                  <div class="basket__row"></div>
+                  <ul class="header__basket-info">
+                    <li class="header__basket-item">
+                      <p class="header__basket-text">
+                        4 <span>билетов</span>
+                      </p>
+                    </li>
+                    <li class="header__basket-item">
+                      <p class="header__basket-text">
+                        6 200 руб.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__top-phone">
+                  <img class="header__phone-img" src="images/icons/phone-icon.svg" alt="телефон">
+                  <ul class="header__phone-info">
+                    <li class="header__phone-item">
+                      <img src="images/icons/green-lamp-icon.svg" alt="">
+                      <p class="header__phone-text">
+                        Без выходных: Пн-Вс: 9:00 - 00:00
+                      </p>
+                    </li>
+                    <li class="header__phone-item">
+                      <p class="header__phone-number">
+                        +7 (495) 123-00-00
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item ">
+                  <a class="header__item-link" href="index.html">
+                    <img class="header__nav-icon" src="images/icons/theater-icon.svg" alt="">
+                    Афиша театра
+                  </a>
+                </li>
+                <li class="header__nav-item ">
+                  <a class="header__item-link" href="#">
+                    <img class="header__nav-icon" src="images/icons/theater-icon-2.svg" alt="">
+                    Схема зала
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__item-link" href="#">
+                    <img class="header__nav-icon" src="images/icons/theatre-icon-3.svg" alt="">
+                    Премьеры
+                    <div class="header__item-nums">8</div>
+                  </a>
+                </li>
+                <li class="header__nav-item ">
+                  <a class="header__item-link" href="repertoire-page.html">
+                    <img class="header__nav-icon" src="images/icons/theatre-icon-4.svg" alt="">
+                    Репертуар
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__item-link" href="delivery-page.html">
+                    <img class="header__nav-icon" src="images/icons/delivery-icon.svg" alt="">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__item-link" href="about-us.html">
+                    <img class="header__nav-icon" src="images/icons/paper-icon.svg" alt="">
+                    О компании
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__item-link" href="#">
+                    <img class="header__nav-icon" src="images/icons/lights-icon.svg" alt="">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      
+      <section class="basket">
+        <div class="container">
+          <div class="header__main-pagination pagination--basket">
+            <a class="header__pagination-link" href="index.html">Билеты в Большой театр</a>
+            /
+            <a class="header__pagination-link" href="#">Корзина</a>
+          </div>
+          <div class="basket__inner">
+            
+            <div class="basket__heading">
+              <h2 class="basket__title">Корзина</h2>
+              <p class="basket__heading-text">Вы положили в корзину следующие билеты:</p>
+            </div>
+            <div class="basket__content">
+              <div class="basket__content-wrapper">
+                <ul class="basket__content-list">
+                  <li class="basket__content-item">
+                    <h2 class="basket__item-title">Наименование</h2>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">Путешествие в Реймс</p>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">Путешествие в Реймс</p>
+                  </li>
+
+                </ul>
+                <ul class="basket__content-list">
+                  <li class="basket__content-item">
+                    <h2 class="basket__item-title">Когда</h2>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">15 мая / 19:00</p>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">16 мая / 19:00</p>
+                  </li>
+                </ul>
+                <ul class="basket__content-list">
+                  <li class="basket__content-item">
+                    <h2 class="basket__item-title">Расположение в зале</h2>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">1-й ярус - 2 ряд, 30 место</p>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-text">1-й ярус - 3 ряд, 21 место</p>
+                  </li>
+                </ul>
+                <ul class="basket__content-list">
+                  <li class="basket__content-item">
+                    <h2 class="basket__item-title">Цена</h2>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-price">10 600 руб.</p>
+                  </li>
+                  <li class="basket__content-item">
+                    <p class="basket__item-price">9 400 руб.</p>
+                  </li>
+                </ul>
+                <ul class="basket__content-list">
+                  <li class="basket__content-item">
+                    <h2 class="basket__item-title">Удалить</h2>
+                  </li>
+                  <li class="basket__content-item">
+                    <img class="basket__item-icon" src="images/home-page/icons/x-icon.svg" alt="">
+                  </li>
+                  <li class="basket__content-item">
+                    <img class="basket__item-icon" src="images/home-page/icons/x-icon.svg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <div class="basket__content-row row--first"></div>
+              <div class="basket__content-row row--second"></div>
+              <div class="basket__content-row row--third"></div>
+
+            </div>
+
+            <p class="basket__total">Итого: билетов - 2 на сумму: <span>25 600 руб.</span></p>
+
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form__inner">
+            <div class="form__wrapper">
+              <form class="form__form">
+                <h2 class="form__title">Оформить заказ</h2>
+                <label class="form__label">
+                    <img class="form__icon" src="images/form-icons/person-icon.svg" alt="">
+                    <input type="text" class="form__input" placeholder="* Фамилия, имя">
+                </label>
+                <label class="form__label">
+                    <img class="form__icon" src="images/form-icons/phone-icon.svg" alt="">
+                    <input type="tel" class="form__input" placeholder="* Телефон">
+                </label>
+                <label class="form__label">
+                    <img class="form__icon" src="images/form-icons/mail-icon.svg" alt="">
+                    <input type="email" class="form__input" placeholder="E-mail">
+                </label>
+                <label class="form__label">
+                    <img class="form__icon" src="images/form-icons/mark-icon.svg" alt="">
+                    <textarea class="form__textarea" placeholder="Комментарий к заказу"></textarea>
+                </label>
+                <div class="form__captcha">
+                    <p class="form__text">Введите защитный код с картинки</p>
+                    <img class="form__img" src="images/form-icons/captcha.jpg" alt="">
+                </div>
+                <label class="form__label">
+                    <input type="text" class="form__input">
+                </label>
+                <button class="form__btn btn">Купить билеты</button>
+                <p class="form__descr">Оплата наличными возможна только после согласования с менеджером</p>
+                <label class="form__custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Нажимая кнопку "Отправить" вы соглашаетесь с <a href="https://meetup.kruchu-werchu.ru/privacy-policy/">политикой обработки данных</a>, <a href="https://meetup.kruchu-werchu.ru/oferta/">договором оферты</a> и даете согласие на обработку персональных данных
+                </label>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__head">
+        <div class="container">
+          <div class="footer__head-inner">
+            <div class="footer__head-phone">
+              <img class="footer__logo-img" src="images/logo.svg" alt="">
+              <ul class="footer__phone-list">
+                <li class="footer__phone-item">
+                  <p class="footer__phone-text">Для заказа билетов звоните</p>
+                </li>
+                <li class="footer__phone-item">
+                  <div class="footer__phone-number">
+                    <img class="footer__number-icon" src="images/icons/phone-icon.svg" alt="">
+                    <p class="footer__number-text">+7 (495) 123-00-00</p>
+                  </div>
+                </li>
+                <li class="footer__phone-item">
+                  <p class="footer__phone-date">пн-пт 09:00-20:00, сб-вс 10:00-18:00</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__head-content">
+              <h2 class="footer__content-title">Для зрителей</h2>
+              <ul class="footer__content-list">
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/theater-icon.svg" alt="">
+                    Афиша театра
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/theater-icon-2.svg" alt="">
+                    Схема зала
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/delivery-icon.svg" alt="">
+                    Доставка и оплата
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/lights-icon.svg" alt="">
+                    Контакты
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/theatre-icon-3.svg" alt="">
+                    Премьеры
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/theatre-icon-4.svg" alt="">
+                    Репертуар
+                  </a>
+                </li>
+                <li class="footer__content-item">
+                  <a class="footer__item-link" href="#">
+                    <img class="footer__item-icon" src="images/icons/paper-icon.svg" alt="">
+                    О компании
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <div class="footer__bottom-contacts">
+              <h2 class="footer__contacts-title">Контакты</h2>
+              <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">
+                  <img class="footer__contacts-icon" src="images/icons/planet-icon.svg" alt="">
+                  <p class="footer__contacts-text">Москва, Петровский пер., д. 5, стр. 1</p>
+                </li>
+                <li class="footer__contacts-item">
+                  <img class="footer__contacts-icon" src="images/icons/mail-icon.svg" alt="">
+                  <div class="footer__contacts-text">Почта: <a class="footer__contacts-link"
+                      href="#">info@bol-theatre.su</a></div>
+                </li>
+                <li class="footer__contacts-item">
+                  <p class="footer__contacts-license">ОГРН 1177704000005</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom-cards">
+              <h2 class="footer__cards-title">Способы оплаты</h2>
+              <ul class="footer__cards-list">
+                <li class="footer__cards-item">
+                  <img class="footer__cards-img" src="images/cards/mir.svg" alt="">
+                </li>
+                <li class="footer__cards-item">
+                  <img class="footer__cards-img" src="images/cards/visa.svg" alt="">
+                </li>
+                <li class="footer__cards-item">
+                  <img class="footer__cards-img" src="images/cards/maestro.svg" alt="">
+                </li>
+                <li class="footer__cards-item">
+                  <img class="footer__cards-img" src="images/cards/mastercard.svg" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

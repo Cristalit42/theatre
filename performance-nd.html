@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 
 </head>
 
@@ -65,7 +66,7 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item ">
-                  <a class="header__item-link header__nav-item--active" href="index.html">
+                  <a class="header__item-link" href="index.html">
                     <img class="header__nav-icon" src="images/icons/theater-icon.svg" alt="">
                     Афиша театра
                   </a>
@@ -83,7 +84,7 @@
                     <div class="header__item-nums">8</div>
                   </a>
                 </li>
-                <li class="header__nav-item ">
+                <li class="header__nav-item header__nav-item--active">
                   <a class="header__item-link" href="repertoire-page.html">
                     <img class="header__nav-icon" src="images/icons/theatre-icon-4.svg" alt="">
                     Репертуар
@@ -112,18 +113,24 @@
           </div>
         </div>
       </div>
-      <div class="header__main">
+      <div class="header__main header__main--pfnd">
         <div class="container">
           <div class="header__main-inner">
             <div class="header__main-content">
-              <div class="header__main-wrapper">
-                <h2 class="header__main-subtitle">билеты</h2>
-                <img class="header__main-icon" src="images/home-page/icons/1.svg" alt="">
-                <img class="header__main-icon" src="images/home-page/icons/2.svg" alt="">
-                <img class="header__main-icon" src="images/home-page/icons/3.svg" alt="">
+              <div class="header__main-pagination">
+                <a class="header__pagination-link" href="index.html">Билеты в Большой театр</a>
+                /
+                <a class="header__pagination-link" href="repertoire-page.html">Репертуар</a>
+                /
+                <a class="header__pagination-link" href="#">Мастер и Маргарита</a>
+
               </div>
-              <h1 class="header__main-title">Большой театр</h1>
-              <p class="header__main-text">* не является официальным сайтом Большого театра</p>
+              <div class="header__main-heading">
+                <h1 class="header__main-title">Мастер и Маргарита</h1>
+                <div class="poster__img-nums">
+                  <p class="poster__nums-text">+12</p>
+                </div>
+              </div>
               <ul class="header__content-list">
                 <li class="header__main-item">
                   <p class="header__content-text">
@@ -149,10 +156,128 @@
     </header>
 
     <main class="main">
-      <section class="poster">
+      <section class="poster poster--pfnd">
         <div class="container">
           <div class="poster__inner">
-            <div class="poster__calendar calendar">
+            <h2 class="poster__title">Билеты в наличии:</h2>
+            <ul class="poster__content-list">
+              <li class="poster__content-item">
+                <ul class="poster__item-date">
+                  <li class="poster__date-title">
+                    <h2>22</h2>
+                  </li>
+                  <li class="poster__date-month">
+                    <p>МАЯ 2024</p>
+                  </li>
+                  <div class="poster__date-time">
+                    <p>СР <span>19:00</span></p>
+                  </div>
+                </ul>
+                <div class="poster__img-box">
+                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                  <div class="poster__img-nums">
+                    <p class="poster__nums-text">+12</p>
+                  </div>
+                </div>
+                <div class="poster__item-content">
+                  <div class="poster__item-descr">
+                    <h2 class="poster__descr-title">Мастер и Маргарита</h2>
+                    <div>
+                      <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
+                      <p class="poster__icon-text">Новая сцена</p>
+                    </div>
+                  </div>
+                  <p class="poster__item-price">от 4 500 руб.</p>
+                  <div class="poster__item-box">
+                    <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="poster__content-item">
+                <ul class="poster__item-date">
+                  <li class="poster__date-title">
+                    <h2>23</h2>
+                  </li>
+                  <li class="poster__date-month">
+                    <p>МАЯ 2024</p>
+                  </li>
+                  <div class="poster__date-time">
+                    <p>ЧТ <span>19:00</span></p>
+                  </div>
+                </ul>
+                <div class="poster__img-box">
+                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                  <div class="poster__img-nums">
+                    <p class="poster__nums-text">+12</p>
+                  </div>
+                </div>
+                <div class="poster__item-content">
+                  <div class="poster__item-descr">
+                    <h2 class="poster__descr-title">Мастер и Маргарита</h2>
+                    <div>
+                      <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
+                      <p class="poster__icon-text">Новая сцена</p>
+                    </div>
+                  </div>
+                  <p class="poster__item-price">от 4 500 руб.</p>
+                  <div class="poster__item-box">
+                    <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="poster__content-item">
+                <ul class="poster__item-date">
+                  <li class="poster__date-title">
+                    <h2>25</h2>
+                  </li>
+                  <li class="poster__date-month">
+                    <p>МАЯ 2024</p>
+                  </li>
+                  <div class="poster__date-time">
+                    <p><span class="popular__list-date--red">СБ</span> <span>19:00</span></p>
+                  </div>
+                </ul>
+                <div class="poster__img-box">
+                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                  <div class="poster__img-nums">
+                    <p class="poster__nums-text">+12</p>
+                  </div>
+                </div>
+                <div class="poster__item-content">
+                  <div class="poster__item-descr">
+                    <h2 class="poster__descr-title">Мастер и Маргарита</h2>
+                    <div>
+                      <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
+                      <p class="poster__icon-text">Новая сцена</p>
+                    </div>
+                  </div>
+                  <p class="poster__item-price">от 4 500 руб.</p>
+                  <div class="poster__item-box">
+                    <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+
+           <div class="poster__scheme-wrapper">
+              <div class="scheme__item-box">
+                <a class="scheme__btn btn" href="performance-nd.html">Выбрать билеты на схеме зала</a>
+              </div>
+           </div>
+          </div>
+        </div>
+      </section>
+      <section class="date">
+        <div class="container">
+          <div class="date__inner">
+            <div><h2 class="date__title">Выберите дату</h2></div>
+
+            <div class="date__calendar calendar">
               <a href="#" class="calendar__arrow-left">
                 <img src="images/icons/calendar-left.svg" alt="">
               </a>
@@ -187,425 +312,104 @@
                 <img src="images/icons/calendar-right.svg" alt="">
               </a>
             </div>
+            
 
-            <div class="poster__heading heading">
-              <div class="heading__title-wrapper">
-                <img class="heading__img-box" src="images/home-page/icons/afisha-icon.svg" alt="">
-                <h2 class="heading__title">Афиша Большого театра</h2>
-              </div>
-              <ul class="heading__content-list">
-                <li class="heading__list-item">
-                  <img class="heading__list-icon" src="images/icons/scene-icon-1.svg" alt="">
-                  <p class="heading__list-text">
-                    Новая сцена
-                  </p>
+            <div class="date__content">
+              <h2 class="date__content-title">Выберите свободные места:</h2>
+              <ul class="date__content-list">
+                <li class="date__content-item">
+                  <div class="date__item-heading">
+                    <p class="date__item-text">Партер - 10 ряд</p>
+                    <p class="date__item-price">Цена: <span>10 700 руб.</span></p>
+                  </div>
+                  <div class="date__item-btns">
+                    <a class="date__item-btn" href="#">14</a>
+                    <a class="date__item-btn date__item-btn--active" href="#">15</a>
+                  </div>
                 </li>
-                <li class="heading__list-item">
-                  <img class="heading__list-icon" src="images/icons/scene-icon-2.svg" alt="">
-                  <p class="heading__list-text">
-                    Историческая сцена
-                  </p>
+                <li class="date__content-item">
+                  <div class="date__item-heading">
+                    <p class="date__item-text">Балкон, 3-й ярус - 2 ряд</p>
+                    <p class="date__item-price">Цена: <span>6 200 руб.</span></p>
+                  </div>
+                  <div class="date__item-btns">
+                    <a class="date__item-btn" href="#">18</a>
+                    <a class="date__item-btn" href="#">19</a>
+                    <a class="date__item-btn" href="#">20</a>
+                    <a class="date__item-btn" href="#">21</a>
+                    <a class="date__item-btn" href="#">22</a>
+                    <a class="date__item-btn" href="#">23</a>
+                    <a class="date__item-btn" href="#">24</a>
+                    <a class="date__item-btn" href="#">25</a>
+                    <a class="date__item-btn" href="#">26</a>
+                    <a class="date__item-btn" href="#">27</a>
+                    <a class="date__item-btn" href="#">28</a>
+                  </div>
                 </li>
-                <li class="heading__list-item">
-                  <img class="heading__list-icon" src="images/icons/scene-icon-3.svg" alt="">
-                  <p class="heading__list-text">
-                    Камерная сцена
-                  </p>
-                </li>
-                <li class="heading__list-item">
-                  <img class="heading__list-icon" src="images/icons/scene-icon-4.svg" alt="">
-                  <p class="heading__list-text">
-                    Бетховенский зал
-                  </p>
+                <li class="date__content-item">
+                  <div class="date__item-heading">
+                    <p class="date__item-text">Ложа бельэтажа 6, ЛС</p>
+                    <p class="date__item-price">Цена: <span>5 500 руб.</span></p>
+                  </div>
+                  <div class="date__item-btns">
+                    <a class="date__item-btn" href="#">3</a>
+                    <a class="date__item-btn" href="#">4</a>
+                    <a class="date__item-btn" href="#">5</a>
+                  </div>
                 </li>
               </ul>
             </div>
-
-            <div class="poster__content">
-              <ul class="poster__content-list">
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>14</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p>ВТ <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/1.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Жизель</h2>
-                      <p class="poster__descr-text">Балет в двух действиях в редакции Ю. Григоровича</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
-                        <p class="poster__icon-text">Новая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 4 500 руб.</p>
-                    <div class="poster__item-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>16</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p>ЧТ <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/2.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Путешествие в Реймс</h2>
-                      <p class="poster__descr-text">Опера в одном действии</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-2.svg" alt="">
-                        <p class="poster__icon-text">Историческая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 6 200 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>18</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p><span class="poster__date-time--red">СБ</span> <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/3.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+6</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Беатриче и Бенедикт</h2>
-                      <p class="poster__descr-text">Опера в двух действиях</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
-                        <p class="poster__icon-text">Новая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 7 100 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>21</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p>ВТ <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/4.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Раймонда</h2>
-                      <p class="poster__descr-text">А. Глазунов Балет в 3-х действиях (3 ч. 15 м.)</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-2.svg" alt="">
-                        <p class="poster__icon-text">Историческая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 4 100 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>22</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p>СР <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/5.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Мастер и Маргарита</h2>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
-                        <p class="poster__icon-text">Новая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 4 500 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>25</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p><span class="poster__date-time--red">СБ </span><span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/6.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Дон Кихот</h2>
-                      <p class="poster__descr-text">Л. Минкус Балет в 3-х действиях</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-2.svg" alt="">
-                        <p class="poster__icon-text">Историческая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 7 100 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>25</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p><span class="poster__date-time--red">СБ</span> <span>12:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/7.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Кармен Сюита</h2>
-                      <p class="poster__descr-text">Модест Мусоргский Опера в трех действиях</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-1.svg" alt="">
-                        <p class="poster__icon-text">Новая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 6 200 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>26</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p><span class="poster__date-time--red">ВС</span> <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/8.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Сорочинская ярмарка</h2>
-                      <p class="poster__descr-text">Модест Мусоргский Опера в трех действиях</p>
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-3.svg" alt="">
-                        <p class="poster__icon-text">Камерная сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 6 200 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>26</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p><span class="poster__date-time--red">ВС</span> <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/9.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Концерт артистов оркестра Большого театра</h2>
-
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-2.svg" alt="">
-                        <p class="poster__icon-text">Историческая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 6 200 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-
-                <li class="poster__content-item">
-                  <ul class="poster__item-date">
-                    <li class="poster__date-title">
-                      <h2>29</h2>
-                    </li>
-                    <li class="poster__date-month">
-                      <p>МАЯ 2024</p>
-                    </li>
-                    <div class="poster__date-time">
-                      <p>ВС <span>19:00</span></p>
-                    </div>
-                  </ul>
-                  <div class="poster__img-box">
-                    <img class="poster__img" src="images/home-page/presentations/10.jpg" alt="">
-                    <div class="poster__img-nums">
-                      <p class="poster__nums-text">+12</p>
-                    </div>
-                  </div>
-                  <div class="poster__item-content">
-                    <div class="poster__item-descr">
-                      <h2 class="poster__descr-title">Свадьба Фигаро</h2>
-                      <p class="poster__descr-text">Опера</p>
-
-                      <div>
-                        <img class="poster__descr-icon" src="images/icons/scene-icon-2.svg" alt="">
-                        <p class="poster__icon-text">Историческая сцена</p>
-                      </div>
-                    </div>
-                    <p class="poster__item-price">от 6 200 руб.</p>
-                    <div class="poster__btn-box">
-                      <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
-                    </div>
-                  </div>
-
-                </li>
-              </ul>
-              <div class="poster__btn-box">
-                <a class="poster__btn--hollow btn--hollow" href="#">Показать еще</a>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
-      <section class="steps">
+      <section class="gallery">
         <div class="container">
-          <div class="steps__inner">
-            <div class="steps__heading">
-              <h2 class="steps__title">Как купить билеты?</h2>
-              <h3 class="steps__subtitle">Для этого понадобится всего 3 шага.</h3>
+          <div class="gallery__inner">
+            <h2 class="gallery__title">Фото и видео</h2>
+            <div class="gallery__slider-wrapper">
+              <a class="gallery__slider-arrow--left" href="#"><img src="images/performance-nd-page/arrow-left-icon.svg" alt=""></a>
+              <a class="gallery__slider-arrow--right" href="#"><img src="images/performance-nd-page/arrow-right-icon.svg" alt=""></a>
+              <div class="gallery__slider">
+                <div class="gallery__slide">
+                  <div class="gallery__img-wrapper">
+                    <div class="gallery__img-overlay"></div>
+                    <img class="gallery__slide-img" src="images/performance-nd-page/2.jpg" alt="">
+                    <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
+                      <img src="images/icons/yt-icon.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <div class="gallery__img-wrapper">
+                    <div class="gallery__img-overlay"></div>
+                    <img class="gallery__slide-img" src="images/performance-nd-page/4.jpg" alt="">
+                    <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
+                      <img src="images/icons/yt-icon.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <div class="gallery__img-wrapper">
+                    <div class="gallery__img-overlay"></div>
+                    <img class="gallery__slide-img" src="images/performance-nd-page/3.jpg" alt="">
+                    <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
+                      <img src="images/icons/yt-icon.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__slide">
+                  <div class="gallery__img-wrapper">
+                    <div class="gallery__img-overlay"></div>
+                    <img class="gallery__slide-img" src="images/performance-nd-page/3.jpg" alt="">
+                    <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
+                      <img src="images/icons/yt-icon.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__slider-dots"></div>
+
             </div>
-            <ul class="steps__content-list">
-              <li class="steps__content-item">
-                <img class="steps__img" src="images/billets/1.png" alt="">
-                <h2 class="steps__item-title">Выберите места</h2>
-                <p class="steps__item-text">на нашем сайте on-line, либо позвоните по телефону</p>
-                <p class="steps__item-phone">+7 (495) 123-00-00</p>
-              </li>
-              <li class="steps__content-item">
-                <img class="steps__img" src="images/billets/2.png" alt="">
-                <a class="steps__btn" href="#">Купить билеты</a>
-                <h2 class="steps__item-title">Оформите заказ</h2>
-                <p class="steps__item-text">Перейдите в корзину и заполните контакные данные</p>
-              </li>
-              <li class="steps__content-item">
-                <img class="steps__img" src="images/billets/3.png" alt="">
-                <h2 class="steps__item-title">Получите билеты</h2>
-                <p class="steps__item-text">Оплата курьеру при получении или картой на сайте</p>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -798,7 +602,7 @@
                       </li>
                     </ul>
                     <div class="popular__btn-box">
-                      <a class="popular__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                      <a class="popular__btn btn" href="#">Выбрать билеты</a>
                     </div>
                   </div>
                 </div>
@@ -825,7 +629,7 @@
                       </li>
                     </ul>
                     <div class="popular__btn-box">
-                      <a class="popular__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                      <a class="popular__btn btn" href="#">Выбрать билеты</a>
                     </div>
                   </div>
                 </div>
@@ -852,7 +656,7 @@
                       </li>
                     </ul>
                     <div class="popular__btn-box">
-                      <a class="popular__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                      <a class="popular__btn btn" href="#">Выбрать билеты</a>
                     </div>
                   </div>
                 </div>
@@ -879,7 +683,7 @@
                       </li>
                     </ul>
                     <div class="popular__btn-box">
-                      <a class="popular__btn btn" href="performance-nd.html">Выбрать билеты</a>
+                      <a class="popular__btn btn" href="#">Выбрать билеты</a>
                     </div>
                     </dic>
                   </div>
@@ -928,7 +732,7 @@
                   </a>
                 </li>
                 <li class="footer__content-item">
-                  <a class="footer__item-link" href="#"> 
+                  <a class="footer__item-link" href="#">
                     <img class="footer__item-icon" src="images/icons/delivery-icon.svg" alt="">
                     Доставка и оплата
                   </a>
@@ -974,7 +778,8 @@
                 </li>
                 <li class="footer__contacts-item">
                   <img class="footer__contacts-icon" src="images/icons/mail-icon.svg" alt="">
-                  <div class="footer__contacts-text">Почта: <a class="footer__contacts-link" href="#">info@bol-theatre.su</a></div>
+                  <div class="footer__contacts-text">Почта: <a class="footer__contacts-link"
+                      href="#">info@bol-theatre.su</a></div>
                 </li>
                 <li class="footer__contacts-item">
                   <p class="footer__contacts-license">ОГРН 1177704000005</p>
@@ -1005,6 +810,8 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 
