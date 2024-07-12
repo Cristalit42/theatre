@@ -1,80 +1,124 @@
-$(function(){
-// accordeon start
+$(function () {
+  // accordeon start
   $('.questions__list-title, .questions__list-link').on('click', function (e) {
     e.preventDefault();
-    
+
     let $item = $(this).closest('.questions__content-item');
     let $text = $item.find('.questions__list-text');
     let $link = $item.find('.questions__list-link');
-    
+
     if ($text.is(':visible')) {
-        $item.removeClass('questions__content-item--active');
-        $text.slideUp();
-        $link.hide();
+      $item.removeClass('questions__content-item--active');
+      $text.slideUp();
+      $link.hide();
     } else {
-        $('.questions__content-item').removeClass('questions__content-item--active');
-        $('.questions__list-text').slideUp();
-        $('.questions__list-link').hide();
-        $item.addClass('questions__content-item--active');
-        $text.slideDown();
-        $link.show();
+      $('.questions__content-item').removeClass('questions__content-item--active');
+      $('.questions__list-text').slideUp();
+      $('.questions__list-link').hide();
+      $item.addClass('questions__content-item--active');
+      $text.slideDown();
+      $link.show();
     }
+  });
+  // accordeon end
+
+
+  // slider start
+
+  $('.popular__slider').slick({
+    arrows: false,
+    slidesToShow: 3,
+    infinite: true,
+    draggable: true,
+    dots: true,
+    appendDots: ('.popular__slider-dots'),
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 2,
+          // slidesToScroll: 1
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
+  })
+
+  $('.popular__slider-arrow--prev').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__slider').slick('slickPrev')
+  })
+
+  $('.popular__slider-arrow--next').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__slider').slick('slickNext')
+  })
+
+  // slider end
+  // gallery slider start
+
+  $('.gallery__slider').slick({
+    arrows: false,
+    slidesToShow: 3,
+    infinite: true,
+    draggable: true,
+    dots: true,
+    appendDots: ('.gallery__slider-dots'),
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
+  });
+  
+  $('.gallery__slider-arrow--left').on('click', function (e) {
+    e.preventDefault();
+    $('.gallery__slider').slick('slickPrev');
+  });
+  
+  $('.gallery__slider-arrow--right').on('click', function (e) {
+    e.preventDefault();
+    $('.gallery__slider').slick('slickNext');
+  });
+  
+
+
+  // gallery slider end
 });
-// accordeon end
 
+// BTN TO TOP START
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('#backToTop').fadeIn();
+    } else {
+      $('#backToTop').fadeOut();
+    }
+  });
 
-// slider start
-
-$('.popular__slider').slick({
-  arrows: false,
-  slidesToShow: 3,
-  infinite: true,
-  draggable: true,
-  dots: true,
-  appendDots: ('.popular__slider-dots'),
-})
-
-$('.popular__slider-arrow--prev').on('click', function (e) {
-  e.preventDefault()
-  $('.popular__slider').slick('slickPrev')
-})
-
-$('.popular__slider-arrow--next').on('click', function (e) {
-  e.preventDefault()
-  $('.popular__slider').slick('slickNext')
-})
-
-// slider end
-// gallery slider start
-
-$('.gallery__slider').slick({
-  arrows: false,
-  slidesToShow: 3,
-  infinite: true,
-  draggable: true,
-  dots: true,
-  appendDots: ('.gallery__slider-dots'),
-  variableWidth: true
-})
-
-$('.gallery__slider-arrow--left').on('click', function (e) {
-  e.preventDefault()
-  $('.gallery__slider').slick('slickPrev')
-})
-
-$('.gallery__slider-arrow--right').on('click', function (e) {
-  e.preventDefault()
-  $('.gallery__slider').slick('slickNext')
-})
-
-
-// gallery slider end
+  $('#backToTop').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 });
+//BTN TO TOP END
 
-
-
-
-$(document).ready(function() {
+// automatic filling of the sheet start 
+$(document).ready(function () {
   const calendarContent = $(".calendar__content");
 
   const renderCalendar = (startDate) => {
@@ -107,3 +151,6 @@ $(document).ready(function() {
   // Пример вызова функции с начальной датой 1 мая 2024 года
   renderCalendar('2024-05-01');
 });
+
+//automatic filling of the sheet end
+

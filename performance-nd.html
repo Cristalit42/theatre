@@ -15,7 +15,7 @@
 
 <body>
   <div class="wrapper">
-
+    <button id="backToTop" style="display: none;"><img src="images/responsive-images/top-icon.svg" alt=""></button>
     <header class="header">
       <div class="header__top">
         <div class="container">
@@ -161,22 +161,26 @@
           <div class="poster__inner">
             <h2 class="poster__title">Билеты в наличии:</h2>
             <ul class="poster__content-list">
+
               <li class="poster__content-item">
-                <ul class="poster__item-date">
-                  <li class="poster__date-title">
-                    <h2>22</h2>
-                  </li>
-                  <li class="poster__date-month">
-                    <p>МАЯ 2024</p>
-                  </li>
-                  <div class="poster__date-time">
-                    <p>СР <span>19:00</span></p>
-                  </div>
-                </ul>
-                <div class="poster__img-box">
-                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
-                  <div class="poster__img-nums">
-                    <p class="poster__nums-text">+12</p>
+                <div style="display: flex; margin-top: 10px;">
+                  <ul class="poster__item-date">
+                    <li class="poster__date-title">
+                      <h2>22</h2>
+                    </li>
+                    <li class="poster__date-month">
+                      <p>МАЯ 2024</p>
+                    </li>
+                    <div class="poster__date-time">
+                      <p>СР <span>19:00</span></p>
+                    </div>
+                  </ul>
+                  <div class="poster__img-box">
+                    <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                    <img class="poster__img poster__img--mobile" src="images/responsive-images/master-mini.jpg" alt="">
+                    <div class="poster__img-nums">
+                      <p class="poster__nums-text">+12</p>
+                    </div>
                   </div>
                 </div>
                 <div class="poster__item-content">
@@ -192,25 +196,27 @@
                     <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
                   </div>
                 </div>
-
               </li>
 
               <li class="poster__content-item">
-                <ul class="poster__item-date">
-                  <li class="poster__date-title">
-                    <h2>23</h2>
-                  </li>
-                  <li class="poster__date-month">
-                    <p>МАЯ 2024</p>
-                  </li>
-                  <div class="poster__date-time">
-                    <p>ЧТ <span>19:00</span></p>
-                  </div>
-                </ul>
-                <div class="poster__img-box">
-                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
-                  <div class="poster__img-nums">
-                    <p class="poster__nums-text">+12</p>
+                <div style="display: flex; margin-top: 10px;">
+                  <ul class="poster__item-date">
+                    <li class="poster__date-title">
+                      <h2>23</h2>
+                    </li>
+                    <li class="poster__date-month">
+                      <p>МАЯ 2024</p>
+                    </li>
+                    <div class="poster__date-time">
+                      <p>ЧТ <span>19:00</span></p>
+                    </div>
+                  </ul>
+                  <div class="poster__img-box">
+                    <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                    <img class="poster__img poster__img--mobile" src="images/responsive-images/master-mini.jpg" alt="">
+                    <div class="poster__img-nums">
+                      <p class="poster__nums-text">+12</p>
+                    </div>
                   </div>
                 </div>
                 <div class="poster__item-content">
@@ -226,25 +232,27 @@
                     <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
                   </div>
                 </div>
-
               </li>
 
               <li class="poster__content-item">
-                <ul class="poster__item-date">
-                  <li class="poster__date-title">
-                    <h2>25</h2>
-                  </li>
-                  <li class="poster__date-month">
-                    <p>МАЯ 2024</p>
-                  </li>
-                  <div class="poster__date-time">
-                    <p><span class="popular__list-date--red">СБ</span> <span>19:00</span></p>
-                  </div>
-                </ul>
-                <div class="poster__img-box">
-                  <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
-                  <div class="poster__img-nums">
-                    <p class="poster__nums-text">+12</p>
+                <div style="display: flex; margin-top: 10px;">
+                  <ul class="poster__item-date">
+                    <li class="poster__date-title">
+                      <h2>22</h2>
+                    </li>
+                    <li class="poster__date-month">
+                      <p>МАЯ 2024</p>
+                    </li>
+                    <div class="poster__date-time">
+                      <p><span class="popular__list-date--red">СР</span> <span>19:00</span></p>
+                    </div>
+                  </ul>
+                  <div class="poster__img-box">
+                    <img class="poster__img" src="images/performance-nd-page/1.jpg" alt="">
+                    <img class="poster__img poster__img--mobile" src="images/responsive-images/master-mini.jpg" alt="">
+                    <div class="poster__img-nums">
+                      <p class="poster__nums-text">+12</p>
+                    </div>
                   </div>
                 </div>
                 <div class="poster__item-content">
@@ -260,22 +268,26 @@
                     <a class="poster__btn btn" href="performance-nd.html">Выбрать билеты</a>
                   </div>
                 </div>
-
               </li>
+
             </ul>
 
-           <div class="poster__scheme-wrapper">
-              <div class="scheme__item-box">
-                <a class="scheme__btn btn" href="performance-nd.html">Выбрать билеты на схеме зала</a>
+            <div class="poster__scheme">
+              <div class="poster__scheme-wrapper">
+                <div class="scheme__item-box">
+                  <a class="scheme__btn btn" href="performance-nd.html">Выбрать билеты на схеме зала</a>
+                </div>
               </div>
-           </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="date">
         <div class="container">
           <div class="date__inner">
-            <div><h2 class="date__title">Выберите дату</h2></div>
+            <div>
+              <h2 class="date__title">Выберите дату</h2>
+            </div>
 
             <div class="date__calendar calendar">
               <a href="#" class="calendar__arrow-left">
@@ -312,7 +324,7 @@
                 <img src="images/icons/calendar-right.svg" alt="">
               </a>
             </div>
-            
+
 
             <div class="date__content">
               <h2 class="date__content-title">Выберите свободные места:</h2>
@@ -367,13 +379,19 @@
           <div class="gallery__inner">
             <h2 class="gallery__title">Фото и видео</h2>
             <div class="gallery__slider-wrapper">
-              <a class="gallery__slider-arrow--left" href="#"><img src="images/performance-nd-page/arrow-left-icon.svg" alt=""></a>
-              <a class="gallery__slider-arrow--right" href="#"><img src="images/performance-nd-page/arrow-right-icon.svg" alt=""></a>
+              <a class="gallery__slider-arrow--left" href="#">
+                <img src="images/performance-nd-page/arrow-left-icon.svg"
+                  alt="">
+              </a>
+              <a class="gallery__slider-arrow--right" href="#">
+                <img
+                  src="images/performance-nd-page/arrow-right-icon.svg" alt="">
+              </a>
               <div class="gallery__slider">
                 <div class="gallery__slide">
                   <div class="gallery__img-wrapper">
                     <div class="gallery__img-overlay"></div>
-                    <img class="gallery__slide-img" src="images/performance-nd-page/2.jpg" alt="">
+                    <img class="gallery__slide-img" src="images/performance-nd-page/2.svg" alt="">
                     <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
                       <img src="images/icons/yt-icon.svg" alt="">
                     </a>
@@ -382,7 +400,7 @@
                 <div class="gallery__slide">
                   <div class="gallery__img-wrapper">
                     <div class="gallery__img-overlay"></div>
-                    <img class="gallery__slide-img" src="images/performance-nd-page/4.jpg" alt="">
+                    <img class="gallery__slide-img" src="images/performance-nd-page/4.svg" alt="">
                     <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
                       <img src="images/icons/yt-icon.svg" alt="">
                     </a>
@@ -391,7 +409,7 @@
                 <div class="gallery__slide">
                   <div class="gallery__img-wrapper">
                     <div class="gallery__img-overlay"></div>
-                    <img class="gallery__slide-img" src="images/performance-nd-page/3.jpg" alt="">
+                    <img class="gallery__slide-img" src="images/performance-nd-page/3.svg" alt="">
                     <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
                       <img src="images/icons/yt-icon.svg" alt="">
                     </a>
@@ -400,7 +418,7 @@
                 <div class="gallery__slide">
                   <div class="gallery__img-wrapper">
                     <div class="gallery__img-overlay"></div>
-                    <img class="gallery__slide-img" src="images/performance-nd-page/3.jpg" alt="">
+                    <img class="gallery__slide-img" src="images/performance-nd-page/3.svg" alt="">
                     <a class="gallery__slide-icon" href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox>
                       <img src="images/icons/yt-icon.svg" alt="">
                     </a>
@@ -410,6 +428,7 @@
               <div class="gallery__slider-dots"></div>
 
             </div>
+
           </div>
         </div>
       </section>
