@@ -3229,4 +3229,24 @@ body {
   .scheme__btn {
     font-size: 12px;
   }
+  .slide__wrapper {
+    margin: 16px;
+    margin-bottom: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popular__btn {
+    min-width: 297px;
+    max-width: 315px;
+  }
+}
+@media (max-width: 395px) {
+  .popular__btn {
+    width: 297px;
+  }
 }
